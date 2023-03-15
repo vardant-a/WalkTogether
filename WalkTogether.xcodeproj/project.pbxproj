@@ -10,7 +10,6 @@
 		0E1B12E629C1D30D00E36C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B12E529C1D30D00E36C64 /* AppDelegate.swift */; };
 		0E1B12E829C1D30D00E36C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B12E729C1D30D00E36C64 /* SceneDelegate.swift */; };
 		0E1B12EA29C1D30D00E36C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B12E929C1D30D00E36C64 /* ViewController.swift */; };
-		0E1B12ED29C1D30D00E36C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B12EB29C1D30D00E36C64 /* Main.storyboard */; };
 		0E1B12EF29C1D30D00E36C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B12EE29C1D30D00E36C64 /* Assets.xcassets */; };
 		0E1B12F229C1D30D00E36C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B12F029C1D30D00E36C64 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		0E1B12E529C1D30D00E36C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E1B12E729C1D30D00E36C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0E1B12E929C1D30D00E36C64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0E1B12EC29C1D30D00E36C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E1B12EE29C1D30D00E36C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E1B12F129C1D30D00E36C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E1B12F329C1D30D00E36C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,38 @@
 		0E1B12E429C1D30D00E36C64 /* WalkTogether */ = {
 			isa = PBXGroup;
 			children = (
-				0E1B12E529C1D30D00E36C64 /* AppDelegate.swift */,
-				0E1B12E729C1D30D00E36C64 /* SceneDelegate.swift */,
-				0E1B12E929C1D30D00E36C64 /* ViewController.swift */,
-				0E1B12EB29C1D30D00E36C64 /* Main.storyboard */,
+				0E1B12F929C1D31C00E36C64 /* Application */,
+				0E1B12FB29C1D32F00E36C64 /* Views */,
 				0E1B12EE29C1D30D00E36C64 /* Assets.xcassets */,
-				0E1B12F029C1D30D00E36C64 /* LaunchScreen.storyboard */,
 				0E1B12F329C1D30D00E36C64 /* Info.plist */,
 			);
 			path = WalkTogether;
+			sourceTree = "<group>";
+		};
+		0E1B12F929C1D31C00E36C64 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0E1B12E529C1D30D00E36C64 /* AppDelegate.swift */,
+				0E1B12E729C1D30D00E36C64 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0E1B12FA29C1D32700E36C64 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E1B12E929C1D30D00E36C64 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0E1B12FB29C1D32F00E36C64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E1B12F029C1D30D00E36C64 /* LaunchScreen.storyboard */,
+				0E1B12FA29C1D32700E36C64 /* Controllers */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +148,6 @@
 			files = (
 				0E1B12F229C1D30D00E36C64 /* LaunchScreen.storyboard in Resources */,
 				0E1B12EF29C1D30D00E36C64 /* Assets.xcassets in Resources */,
-				0E1B12ED29C1D30D00E36C64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0E1B12EB29C1D30D00E36C64 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E1B12EC29C1D30D00E36C64 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E1B12F029C1D30D00E36C64 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +304,9 @@
 				INFOPLIST_FILE = WalkTogether/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +314,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "vardant-it.WalkTogether";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +335,9 @@
 				INFOPLIST_FILE = WalkTogether/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "vardant-it.WalkTogether";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
