@@ -26,6 +26,7 @@ final class ModuleFactory {
     }
     
     func buildFirstViewController() -> UIViewController {
-        return ViewController()
+        guard let coordinator = coordinator else { return UIViewController() }
+        return FirstModuleAssembler.build(coordinator: coordinator)
     }
 }
