@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E03BCBB29F09455005B9029 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E03BCBA29F09455005B9029 /* music.mp3 */; };
 		0E1B12E629C1D30D00E36C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B12E529C1D30D00E36C64 /* AppDelegate.swift */; };
 		0E1B12E829C1D30D00E36C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B12E729C1D30D00E36C64 /* SceneDelegate.swift */; };
 		0E1B12EA29C1D30D00E36C64 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B12E929C1D30D00E36C64 /* FirstViewController.swift */; };
 		0E1B12EF29C1D30D00E36C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B12EE29C1D30D00E36C64 /* Assets.xcassets */; };
 		0E1B12F229C1D30D00E36C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B12F029C1D30D00E36C64 /* LaunchScreen.storyboard */; };
+		0E20F19029F5CCB50071245B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20F18F29F5CCB50071245B /* AudioPlayer.swift */; };
 		0E241BC029E1FA4200631A2C /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BBF29E1FA4200631A2C /* AppAssembler.swift */; };
 		0E241BC229E1FAB300631A2C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BC129E1FAB300631A2C /* Coordinator.swift */; };
 		0E241BC529E1FB6000631A2C /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BC429E1FB6000631A2C /* ServicesFactory.swift */; };
@@ -25,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E03BCBA29F09455005B9029 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		0E1B12E229C1D30D00E36C64 /* WalkTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1B12E529C1D30D00E36C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E1B12E729C1D30D00E36C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		0E1B12EE29C1D30D00E36C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E1B12F129C1D30D00E36C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E1B12F329C1D30D00E36C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E20F18F29F5CCB50071245B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		0E241BBF29E1FA4200631A2C /* AppAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
 		0E241BC129E1FAB300631A2C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0E241BC429E1FB6000631A2C /* ServicesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesFactory.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				0E241BC429E1FB6000631A2C /* ServicesFactory.swift */,
 				0E241BC629E1FBA300631A2C /* FeaturesFactory.swift */,
 				0E241BC829E1FC1A00631A2C /* ModuleFactory.swift */,
+				0E20F18F29F5CCB50071245B /* AudioPlayer.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 		0E241BCA29E2003900631A2C /* AuthModule */ = {
 			isa = PBXGroup;
 			children = (
+				0E03BCBA29F09455005B9029 /* music.mp3 */,
 				0E1B12E929C1D30D00E36C64 /* FirstViewController.swift */,
 				0E241BCB29E201A900631A2C /* FirstViewPresenter.swift */,
 				0E241BCD29E203EE00631A2C /* FirstModuleAssembler.swift */,
@@ -242,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EBEF17C29C1D69200B8E37C /* .swiftlint.yml in Resources */,
+				0E03BCBB29F09455005B9029 /* music.mp3 in Resources */,
 				0E1B12F229C1D30D00E36C64 /* LaunchScreen.storyboard in Resources */,
 				0E1B12EF29C1D30D00E36C64 /* Assets.xcassets in Resources */,
 			);
@@ -285,6 +292,7 @@
 				0E1B12E629C1D30D00E36C64 /* AppDelegate.swift in Sources */,
 				0E241BC729E1FBA300631A2C /* FeaturesFactory.swift in Sources */,
 				0E1B12E829C1D30D00E36C64 /* SceneDelegate.swift in Sources */,
+				0E20F19029F5CCB50071245B /* AudioPlayer.swift in Sources */,
 				0E241BCC29E201A900631A2C /* FirstViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
