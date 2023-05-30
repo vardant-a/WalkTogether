@@ -9,19 +9,10 @@ import UIKit
 import AVKit
 import MediaPlayer
 
-fileprivate enum AudioPlayerStatus {
-    case play, pause
-}
-
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // MARK: - Public Properties
     
     var window: UIWindow?
-    private(set) var playingStatus = false
-    
-    private var player: AVPlayer?
-    private var audioSession = AVAudioSession.sharedInstance()
-    private let commandCenter = MPRemoteCommandCenter.shared()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
@@ -32,6 +23,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         AppAssembler.start(window: window)
     }
-    
-
 }

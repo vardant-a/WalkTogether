@@ -8,6 +8,7 @@
 import UIKit
 import AVKit
 import MediaPlayer
+import AVFoundation
 
 fileprivate enum AudioPlayerStatus {
     case play, pause
@@ -47,6 +48,7 @@ final class AudioPlayer {
             setupAudioPlayerStatus(.pause)
         } else {
             setupAudioPlayerStatus(.play)
+            playbackAudio()
         }
     }
     
@@ -56,7 +58,7 @@ final class AudioPlayer {
         
         if let image = image {
             audioDescription[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(
-                boundsSize: image.size, requestHandler: { size in
+                boundsSize: image.size, requestHandler: { _ in
                 return image
             })
         }
@@ -65,7 +67,7 @@ final class AudioPlayer {
     }
     
     func setupTransportControl() {
-        commandCenter.togglePlayPauseCommand.addTarget { [unowned self] event in
+        commandCenter.togglePlayPauseCommand.addTarget { [unowned self] _ in
             if player?.rate == 0.0 {
                 setupAudioPlayerStatus(.play)
                 return .success
@@ -76,12 +78,12 @@ final class AudioPlayer {
             return .commandFailed
         }
         
-        commandCenter.nextTrackCommand.addTarget { event in
+        commandCenter.nextTrackCommand.addTarget { _ in
             print("next")
             return .success
         }
         
-        commandCenter.previousTrackCommand.addTarget { event in
+        commandCenter.previousTrackCommand.addTarget { _ in
             print("previus")
             return .success
         }
@@ -94,6 +96,14 @@ final class AudioPlayer {
             player?.play()
         case .pause:
             player?.pause()
+        }
+    }
+    
+    func playbackAudio() {
+        do {
+            try audioSession.setCategory(.playback, mode: .default, options: [])
+        } catch {
+            print("AudioSession don`t work")
         }
     }
 }

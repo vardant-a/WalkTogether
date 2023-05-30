@@ -40,7 +40,7 @@ final class FirstViewController: UIViewController {
     private func startAudio() {
         let url = Bundle.main.url(forResource: "music", withExtension: "mp3")!
         player.startAudioStream(url: url)
-        player.addLockPlayer("test")
+        player.addLockPlayer("Music")
         player.setupTransportControl()
     }
     
@@ -78,75 +78,4 @@ final class FirstViewController: UIViewController {
     // MARK: - FirstViewController + FirstViewControllerProtocol
 
 extension FirstViewController: FirstViewControllerProtocol {
-}
-
-final class VolumeSlider: UIView {
-    
-    // MARK: - Private Properties
-    
-    let minVolumeImageView = UIImageView(image: UIImage(systemName: "speaker.fill")?.withConfiguration(
-        UIImage.SymbolConfiguration(pointSize: 25)))
-    let maxVolumeImageView = UIImageView(image: UIImage(systemName: "speaker.wave.3.fill")?.withConfiguration(
-        UIImage.SymbolConfiguration(pointSize: 25)))
-    
-    private let volumeSlider: MPVolumeView = {
-        let slider = MPVolumeView()
-        slider.tintColor = .orange
-        slider.showsRouteButton = false
-        
-        return slider
-    }()
-    
-    // MARK: - Init
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        selfConfig()
-    }
-    
-    required init(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    // MARK: - Private Methods
-    
-    private func selfConfig() {
-        addSubview(minVolumeImageView)
-        addSubview(volumeSlider)
-        addSubview(maxVolumeImageView)
-        setupLayout()
-    }
-    
-    // MARK: - Layout
-    
-    private func setupLayout() {
-        self.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.heightAnchor.constraint(equalToConstant: 44).isActive = true
-        setupVolumeImageViewsLayout()
-        setupVolumeSliderLayout()
-    }
-    
-    private func setupVolumeSliderLayout() {
-        volumeSlider.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            volumeSlider.leadingAnchor.constraint(equalTo: minVolumeImageView.trailingAnchor, constant: 8),
-            volumeSlider.trailingAnchor.constraint(equalTo: maxVolumeImageView.leadingAnchor, constant: -8),
-            volumeSlider.centerYAnchor.constraint(equalTo: centerYAnchor)
-        ])
-    }
-    
-    private func setupVolumeImageViewsLayout() {
-        minVolumeImageView.translatesAutoresizingMaskIntoConstraints = false
-        maxVolumeImageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            maxVolumeImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            maxVolumeImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            
-            maxVolumeImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            maxVolumeImageView.centerYAnchor.constraint(equalTo: centerYAnchor)
-        ])
-    }
 }
