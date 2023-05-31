@@ -23,6 +23,8 @@
 		0E241BCE29E203EE00631A2C /* FirstModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BCD29E203EE00631A2C /* FirstModuleAssembler.swift */; };
 		0E241BD129E2069300631A2C /* UIAlertController+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BD029E2069300631A2C /* UIAlertController+EX.swift */; };
 		0E241BD429E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BD329E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift */; };
+		0EA8291F29F666DB0049DBBF /* VolumeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8291E29F666DB0049DBBF /* VolumeSlider.swift */; };
+		0EA8292129F667270049DBBF /* UIView+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8292029F667270049DBBF /* UIView+EX.swift */; };
 		0EBEF17C29C1D69200B8E37C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0EBEF17B29C1D69200B8E37C /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		0E241BCD29E203EE00631A2C /* FirstModuleAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModuleAssembler.swift; sourceTree = "<group>"; };
 		0E241BD029E2069300631A2C /* UIAlertController+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+EX.swift"; sourceTree = "<group>"; };
 		0E241BD329E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CurrentTransitionHandler.swift"; sourceTree = "<group>"; };
+		0EA8291E29F666DB0049DBBF /* VolumeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeSlider.swift; sourceTree = "<group>"; };
+		0EA8292029F667270049DBBF /* UIView+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EX.swift"; sourceTree = "<group>"; };
 		0EBEF17B29C1D69200B8E37C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +168,7 @@
 		0E241BCA29E2003900631A2C /* AuthModule */ = {
 			isa = PBXGroup;
 			children = (
+				0EA8291E29F666DB0049DBBF /* VolumeSlider.swift */,
 				0E03BCBA29F09455005B9029 /* music.mp3 */,
 				0E1B12E929C1D30D00E36C64 /* FirstViewController.swift */,
 				0E241BCB29E201A900631A2C /* FirstViewPresenter.swift */,
@@ -184,6 +189,7 @@
 			children = (
 				0E241BD029E2069300631A2C /* UIAlertController+EX.swift */,
 				0E241BD329E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift */,
+				0EA8292029F667270049DBBF /* UIView+EX.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -284,11 +290,13 @@
 				0E241BC029E1FA4200631A2C /* AppAssembler.swift in Sources */,
 				0E1B12EA29C1D30D00E36C64 /* FirstViewController.swift in Sources */,
 				0E241BD429E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift in Sources */,
+				0EA8292129F667270049DBBF /* UIView+EX.swift in Sources */,
 				0E241BC529E1FB6000631A2C /* ServicesFactory.swift in Sources */,
 				0E241BC229E1FAB300631A2C /* Coordinator.swift in Sources */,
 				0E241BC929E1FC1A00631A2C /* ModuleFactory.swift in Sources */,
 				0E241BCE29E203EE00631A2C /* FirstModuleAssembler.swift in Sources */,
 				0E241BD129E2069300631A2C /* UIAlertController+EX.swift in Sources */,
+				0EA8291F29F666DB0049DBBF /* VolumeSlider.swift in Sources */,
 				0E1B12E629C1D30D00E36C64 /* AppDelegate.swift in Sources */,
 				0E241BC729E1FBA300631A2C /* FeaturesFactory.swift in Sources */,
 				0E1B12E829C1D30D00E36C64 /* SceneDelegate.swift in Sources */,
