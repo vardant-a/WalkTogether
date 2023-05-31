@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E03BCBB29F09455005B9029 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E03BCBA29F09455005B9029 /* music.mp3 */; };
 		0E1B12E629C1D30D00E36C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B12E529C1D30D00E36C64 /* AppDelegate.swift */; };
 		0E1B12E829C1D30D00E36C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B12E729C1D30D00E36C64 /* SceneDelegate.swift */; };
 		0E1B12EA29C1D30D00E36C64 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B12E929C1D30D00E36C64 /* FirstViewController.swift */; };
 		0E1B12EF29C1D30D00E36C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B12EE29C1D30D00E36C64 /* Assets.xcassets */; };
 		0E1B12F229C1D30D00E36C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B12F029C1D30D00E36C64 /* LaunchScreen.storyboard */; };
+		0E20F19029F5CCB50071245B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20F18F29F5CCB50071245B /* AudioPlayer.swift */; };
 		0E241BC029E1FA4200631A2C /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BBF29E1FA4200631A2C /* AppAssembler.swift */; };
 		0E241BC229E1FAB300631A2C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BC129E1FAB300631A2C /* Coordinator.swift */; };
 		0E241BC529E1FB6000631A2C /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BC429E1FB6000631A2C /* ServicesFactory.swift */; };
@@ -19,10 +21,15 @@
 		0E241BC929E1FC1A00631A2C /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BC829E1FC1A00631A2C /* ModuleFactory.swift */; };
 		0E241BCC29E201A900631A2C /* FirstViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BCB29E201A900631A2C /* FirstViewPresenter.swift */; };
 		0E241BCE29E203EE00631A2C /* FirstModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BCD29E203EE00631A2C /* FirstModuleAssembler.swift */; };
+		0E241BD129E2069300631A2C /* UIAlertController+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BD029E2069300631A2C /* UIAlertController+EX.swift */; };
+		0E241BD429E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241BD329E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift */; };
+		0EA8291F29F666DB0049DBBF /* VolumeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8291E29F666DB0049DBBF /* VolumeSlider.swift */; };
+		0EA8292129F667270049DBBF /* UIView+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8292029F667270049DBBF /* UIView+EX.swift */; };
 		0EBEF17C29C1D69200B8E37C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0EBEF17B29C1D69200B8E37C /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E03BCBA29F09455005B9029 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		0E1B12E229C1D30D00E36C64 /* WalkTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1B12E529C1D30D00E36C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E1B12E729C1D30D00E36C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +37,7 @@
 		0E1B12EE29C1D30D00E36C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E1B12F129C1D30D00E36C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E1B12F329C1D30D00E36C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E20F18F29F5CCB50071245B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		0E241BBF29E1FA4200631A2C /* AppAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
 		0E241BC129E1FAB300631A2C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0E241BC429E1FB6000631A2C /* ServicesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesFactory.swift; sourceTree = "<group>"; };
@@ -37,6 +45,10 @@
 		0E241BC829E1FC1A00631A2C /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 		0E241BCB29E201A900631A2C /* FirstViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewPresenter.swift; sourceTree = "<group>"; };
 		0E241BCD29E203EE00631A2C /* FirstModuleAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModuleAssembler.swift; sourceTree = "<group>"; };
+		0E241BD029E2069300631A2C /* UIAlertController+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+EX.swift"; sourceTree = "<group>"; };
+		0E241BD329E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CurrentTransitionHandler.swift"; sourceTree = "<group>"; };
+		0EA8291E29F666DB0049DBBF /* VolumeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeSlider.swift; sourceTree = "<group>"; };
+		0EA8292029F667270049DBBF /* UIView+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EX.swift"; sourceTree = "<group>"; };
 		0EBEF17B29C1D69200B8E37C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,9 +138,11 @@
 		0E241BBD29E1F90400631A2C /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				0E241BC329E1FB1A00631A2C /* Factories */,
-				0E241BBE29E1F9CF00631A2C /* Services */,
 				0E1B12F929C1D31C00E36C64 /* Application */,
+				0E241BCF29E2065800631A2C /* Models */,
+				0E241BBE29E1F9CF00631A2C /* Services */,
+				0E241BC329E1FB1A00631A2C /* Factories */,
+				0E241BD229E206BC00631A2C /* Extensions */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -146,6 +160,7 @@
 				0E241BC429E1FB6000631A2C /* ServicesFactory.swift */,
 				0E241BC629E1FBA300631A2C /* FeaturesFactory.swift */,
 				0E241BC829E1FC1A00631A2C /* ModuleFactory.swift */,
+				0E20F18F29F5CCB50071245B /* AudioPlayer.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -153,11 +168,30 @@
 		0E241BCA29E2003900631A2C /* AuthModule */ = {
 			isa = PBXGroup;
 			children = (
+				0EA8291E29F666DB0049DBBF /* VolumeSlider.swift */,
+				0E03BCBA29F09455005B9029 /* music.mp3 */,
 				0E1B12E929C1D30D00E36C64 /* FirstViewController.swift */,
 				0E241BCB29E201A900631A2C /* FirstViewPresenter.swift */,
 				0E241BCD29E203EE00631A2C /* FirstModuleAssembler.swift */,
 			);
 			path = AuthModule;
+			sourceTree = "<group>";
+		};
+		0E241BCF29E2065800631A2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E241BD229E206BC00631A2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0E241BD029E2069300631A2C /* UIAlertController+EX.swift */,
+				0E241BD329E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift */,
+				0EA8292029F667270049DBBF /* UIView+EX.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EBEF17C29C1D69200B8E37C /* .swiftlint.yml in Resources */,
+				0E03BCBB29F09455005B9029 /* music.mp3 in Resources */,
 				0E1B12F229C1D30D00E36C64 /* LaunchScreen.storyboard in Resources */,
 				0E1B12EF29C1D30D00E36C64 /* Assets.xcassets in Resources */,
 			);
@@ -254,13 +289,18 @@
 			files = (
 				0E241BC029E1FA4200631A2C /* AppAssembler.swift in Sources */,
 				0E1B12EA29C1D30D00E36C64 /* FirstViewController.swift in Sources */,
+				0E241BD429E206E100631A2C /* UIViewController+CurrentTransitionHandler.swift in Sources */,
+				0EA8292129F667270049DBBF /* UIView+EX.swift in Sources */,
 				0E241BC529E1FB6000631A2C /* ServicesFactory.swift in Sources */,
 				0E241BC229E1FAB300631A2C /* Coordinator.swift in Sources */,
 				0E241BC929E1FC1A00631A2C /* ModuleFactory.swift in Sources */,
 				0E241BCE29E203EE00631A2C /* FirstModuleAssembler.swift in Sources */,
+				0E241BD129E2069300631A2C /* UIAlertController+EX.swift in Sources */,
+				0EA8291F29F666DB0049DBBF /* VolumeSlider.swift in Sources */,
 				0E1B12E629C1D30D00E36C64 /* AppDelegate.swift in Sources */,
 				0E241BC729E1FBA300631A2C /* FeaturesFactory.swift in Sources */,
 				0E1B12E829C1D30D00E36C64 /* SceneDelegate.swift in Sources */,
+				0E20F19029F5CCB50071245B /* AudioPlayer.swift in Sources */,
 				0E241BCC29E201A900631A2C /* FirstViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
